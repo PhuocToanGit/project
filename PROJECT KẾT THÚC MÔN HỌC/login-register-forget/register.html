@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPT Đăng ký tài khoản</title>
+  </head>
+  <body
+    style="
+      background-image: url(../img/background-may-mau-hong_035901823.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <div
+      style="
+        background-color: rgb(255, 255, 255);
+        width: 700px;
+        height: 800px;
+        margin-left: 60%;
+        margin-top: 5%;
+        border-radius: 50px;
+      "
+    >
+      <form
+        action=""
+        style="margin-left: 20%; padding-top: 15%; font-size: 20px"
+      >
+        <h2>Đăng ký tài khoản cho BPT</h2>
+        <div class="group-register">
+          <!-- <label for="username">Họ và tên</label> <br /> -->
+          <input
+            type="text"
+            id="username"
+            placeholder="Họ và tên người dùng"
+            style="padding-left: 20px"
+            required
+            minlength="10"
+            maxlength="50"
+          />
+        </div>
+        <div class="group-register">
+          <!-- <label for="password">Mật khẩu</label> -->
+          <br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Mật khẩu"
+            style="padding-left: 20px"
+          />
+        </div>
+        <div class="group-register">
+          <!-- <label for="password">Mật khẩu</label> -->
+          <table>
+            <tr>
+              <td>
+                <input
+                  type="radio"
+                  id="gender"
+                  name="gender"
+                  style="width: 15px; height: 15px"
+                />Nam
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  id="gender"
+                  name="gender"
+                  style="width: 15px; height: 15px"
+                />Nữ
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="group-register">
+          <!-- <label for="email">Email</label> -->
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Nhập Email"
+            required
+            style="padding-left: 20px"
+          />
+        </div>
+        <div class="group-register">
+          <!-- <label for="email">Email</label> -->
+          <br />
+          <input
+            type="tel"
+            id="telephone"
+            placeholder="Nhập Số điện thoại"
+            required
+            style="padding-left: 20px"
+            pattern="[0-9]{10}"
+          />
+        </div>
+        <br />
+        <div class="group-register">
+          <!-- <select name="city" id="city-select">
+            <option value="">Chọn tỉnh thành</option>
+            <option value="Hochiminh">TP.Hồ CHí Minh</option>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Bạc liêu">Bạc Liêu</option>
+            <option value="Cần thơ">Cần thơ</option>
+          </select> -->
+          <div>
+            <select
+              class="form-select form-select-sm mb-3"
+              id="city"
+              aria-label=".form-select-sm"
+              style="height: 30px"
+              required
+            >
+              <option value="" selected>Chọn tỉnh thành</option>
+            </select>
+
+            <select
+              class="form-select form-select-sm mb-3"
+              id="district"
+              aria-label=".form-select-sm"
+              style="height: 30px"
+              required
+            >
+              <option value="" selected>Chọn quận huyện</option>
+            </select>
+
+            <select
+              class="form-select form-select-sm"
+              id="ward"
+              aria-label=".form-select-sm"
+              style="height: 30px"
+              required
+            >
+              <option value="" selected>Chọn phường xã</option>
+            </select>
+          </div>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+          <script>
+            var citis = document.getElementById("city");
+            var districts = document.getElementById("district");
+            var wards = document.getElementById("ward");
+            var Parameter = {
+              url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+              method: "GET",
+              responseType: "application/json",
+            };
+            var promise = axios(Parameter);
+            promise.then(function (result) {
+              renderCity(result.data);
+            });
+
+            function renderCity(data) {
+              for (const x of data) {
+                citis.options[citis.options.length] = new Option(x.Name, x.Id);
+              }
+              citis.onchange = function () {
+                district.length = 1;
+                ward.length = 1;
+                if (this.value != "") {
+                  const result = data.filter((n) => n.Id === this.value);
+
+                  for (const k of result[0].Districts) {
+                    district.options[district.options.length] = new Option(
+                      k.Name,
+                      k.Id
+                    );
+                  }
+                }
+              };
+              district.onchange = function () {
+                ward.length = 1;
+                const dataCity = data.filter((n) => n.Id === citis.value);
+                if (this.value != "") {
+                  const dataWards = dataCity[0].Districts.filter(
+                    (n) => n.Id === this.value
+                  )[0].Wards;
+
+                  for (const w of dataWards) {
+                    wards.options[wards.options.length] = new Option(
+                      w.Name,
+                      w.Id
+                    );
+                  }
+                }
+              };
+            }
+          </script>
+        </div>
+        <div class="group-register">
+          <!-- <label for="email">Email</label> -->
+          <br />
+          <input
+            type="text"
+            id="address"
+            placeholder="Nhập địa chỉ cụ thể"
+            required
+            style="padding-left: 20px"
+          />
+        </div>
+        <br />
+        <div class="group-register">
+          <input
+            type="checkbox"
+            style="width: 15px; height: 15px"
+            id="commit"
+            required
+          />
+          Tôi cam kết những thông tin trên là đúng sự thật
+        </div>
+        <br />
+        <div class="group-register">
+          <button
+            type="submit"
+            style="
+              background-color: rgb(0, 140, 255);
+              width: 329px;
+              height: 40px;
+              border-radius: 5px;
+              border-color: rgb(0, 140, 255);
+            "
+            onclick="showMessage()"
+          >
+            <script>
+              function showMessage() {
+                alert("Bạn đã đăng ký thành công!");
+              }
+            </script>
+            <span>Đăng Ký</span>
+          </button>
+        </div>
+        <div class="group-register" style="padding-top: 15px">
+          <a href="login.html">Đăng Nhập</a>
+        </div>
+        <link rel="stylesheet" href="register.css" />
+      </form>
+    </div>
+  </body>
+</html>

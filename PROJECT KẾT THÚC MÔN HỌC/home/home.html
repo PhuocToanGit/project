@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPT Nâng tầm tri thức</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="home.css" />
+    <header class="">
+      <div class="main-container">
+        <a href="./home.html" class="logo"
+          ><img src="/img/favicon.ico" alt="" /><span>BPT</span></a
+        >
+        <nav>
+          <ul class="menu">
+            <li class="option-menu">
+              <a href="./home.html">Trang chủ</a>
+            </li>
+            <li class="option-menu">
+              <a href="./introduce.html">Giới Thiệu</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Thể loại</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Fanpage</a>
+            </li>
+            <li class="option-menu">
+              <a href="./contact.html">Liên Hệ</a>
+            </li>
+            <li class="option-menu">
+              <a href="../login-register-forget/login.html">Đăng Nhập</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner"></div>
+    <div class="headline">
+      <h2>Danh sách các Sản phẩm bán chạy nhất hiện nay</h2>
+    </div>
+    <article>
+      <div>
+        <ul class="list-products">
+          <li class="products">
+            <div class="products-top">
+              <a href="" class="thumb"
+                ><img src="../img/yêu trên từng ngón tay.jpg"
+              /></a>
+              <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">book</a>
+              <a href="" class="products-name">Love on each finger</a>
+              <div class="products-price">$19,00</div>
+            </div>
+          </li>
+          <li class="products">
+            <div class="products-top">
+              <a href="" class="thumb"><img src="../img/unnamed.jpg" /></a>
+              <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">book</a>
+              <a href="" class="products-name">Because i meet u</a>
+              <div class="products-price">$30,00</div>
+            </div>
+          </li>
+          <li class="products">
+            <div class="products-top">
+              <a href="" class="thumb"
+                ><img src="../img/9_thiet_ke_bia_sach_dep_20.jpg"
+              /></a>
+              <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">book</a>
+              <a href="" class="products-name">The Vanishing Act</a>
+              <div class="products-price">$150,00</div>
+            </div>
+          </li>
+          <li class="products">
+            <div class="products-top">
+              <a href="" class="thumb"
+                ><img src="../img/1003w-eRK4o7m6a6c.webp"
+              /></a>
+              <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">book</a>
+              <a href="" class="products-name">Nhớ một thời ta đã quên</a>
+              <div class="products-price">$15,00</div>
+            </div>
+          </li>
+          <li class="products">
+            <div class="products-top">
+              <a href="" class="thumb"><img src="../img/xuxudungkhoc.jpg" /></a>
+              <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">book</a>
+              <a href="" class="products-name">Xu xu don't cry</a>
+              <div class="products-price">$8,00</div>
+            </div>
+          </li>
+          <li class="products">
+            <div class="products-top">
+              <a href="" class="thumb"><img src="../img/dieubimat.JPG" /></a>
+              <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">book</a>
+              <a href="" class="products-name">The serect</a>
+              <div class="products-price">$45,00</div>
+            </div>
+          </li>
+          <li class="products">
+            <div class="products-top">
+              <a href="" class="thumb"
+                ><img src="../img/16_thiet_ke_bia_sach_dep_20.jpg"
+              /></a>
+              <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">book</a>
+              <a href="" class="products-name">Shadow anh Bone</a>
+              <div class="products-price">$2.999,00</div>
+            </div>
+          </li>
+          <li class="products">
+            <div class="products-top">
+              <a href="./products.html" class="thumb"
+                ><img src="../img/Chainsawman.jpg"
+              /></a>
+              <a href="./products.html" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+              <a href="" class="products-cat">Manga</a>
+              <a href="./products.html" class="products-name">Chainsaw man</a>
+              <div class="products-price">$9.999,99</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

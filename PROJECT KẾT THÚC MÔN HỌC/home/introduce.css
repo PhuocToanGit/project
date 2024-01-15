@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+header.sticky nav ul li.option-menu:hover {
+  border-bottom: 5px #000000 solid;
+}
+nav ul li.option-menu:hover {
+  border-bottom: 5px #ffffff solid;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 100000;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px rgb(255, 255, 255) solid;
+}
+ul.menu {
+  display: flex;
+}
+nav ul li.option-menu {
+  list-style: none;
+  padding: 25px 40px;
+  font-size: 25px;
+}
+nav ul li.option-menu a {
+  text-decoration: none;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+span {
+  padding-left: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.banner {
+  background: url(../img/hinh3.jpg);
+  min-height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+header.sticky {
+  background: #fff;
+  opacity: 0.9;
+  padding: 10px 0px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+header.sticky .main-container a {
+  color: #000;
+}
+header.sticky .main-container span {
+  color: #000;
+}
+/* từ đây là phần article */
+/* từ đây là phần article */
+/* từ đây là phần article */
+/*từ đây là phần article */
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px;
+}
+article .main-introduce {
+  width: 1170px;
+  color: #fff;
+  margin: 50px auto;
+}
+.content {
+  font-size: 25px;
+  text-indent: 50px;
+}
+.img-introduce {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px;
+}

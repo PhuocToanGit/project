@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPT Nâng tầm tri thức</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="introduce.css" />
+    <header class="">
+      <div class="main-container">
+        <a href="./home.html" class="logo"
+          ><img src="/img/favicon.ico" alt="" /><span>BPT</span></a
+        >
+        <nav>
+          <ul class="menu">
+            <li class="option-menu">
+              <a href="./home.html">Trang chủ</a>
+            </li>
+            <li class="option-menu">
+              <a href="./introduce.html">Giới Thiệu</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Thể loại</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Fanpage</a>
+            </li>
+            <li class="option-menu">
+              <a href="./contact.html">Liên Hệ</a>
+            </li>
+            <li class="option-menu">
+              <a href="../login-register-forget/login.html">Đăng Nhập</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner"></div>
+    <article>
+      <h1>BPT website</h1>
+      <div class="main-introduce">
+        <div class="content">
+          <div>
+            Chào mừng bạn đến với "BPT", nơi mà những trang sách và truyện tranh
+            tựa như những cánh cửa mở ra thế giới phong phú của tri thức và giải
+            trí. Chúng tôi tự hào là điểm đến lý tưởng cho những người yêu thích
+          </div>
+          <div>
+            đọc sách và thưởng thức nghệ thuật truyện tranh. Trong thư viện của
+            chúng tôi, bạn sẽ khám phá một đại dương vô tận của các thể loại, từ
+            kinh điển văn học đến những câu chuyện hiện đại đầy sáng tạo. Với sự
+            đa dạng về nội dung, từ tiểu thuyết đến sách học thuật, chúng tôi
+            cam kết mang đến cho bạn trải nghiệm đọc sách độc đáo và không ngừng
+            mở rộng kiến thức.
+          </div>
+          <img src="../img/nguoidocsach.jpg" class="img-introduce" />
+          <div>
+            Ngoài ra, "BPT" còn chú trọng vào thế giới truyện tranh, nơi mà
+            những hình ảnh động đầy màu sắc và tâm huyết chờ đợi bạn khám phá.
+            Từ manga Nhật Bản cho đến truyện tranh siêu anh hùng hoặc những tác
+            phẩm độc đáo của nghệ sĩ đương đại, chúng tôi sẽ là điểm đến lý
+            tưởng cho cả những người mới bắt đầu và những người hâm mộ trung
+            thành.
+          </div>
+          <div>
+            Hãy cùng chúng tôi hòa mình vào thế giới phong phú của từng trang
+            sách và truyện tranh. "BPT" không chỉ là một cửa hàng, mà là ngôi
+            nhà của những câu chuyện, nơi mà niềm đam mê và sự hiếu kỳ được kích
+            thích. Hãy đồng hành cùng chúng tôi trên hành trình khám phá văn hóa
+            và kiến thức qua từng trang giấy và hình ảnh nghệ thuật độc đáo!
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

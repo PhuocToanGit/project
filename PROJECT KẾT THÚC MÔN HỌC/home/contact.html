@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPT Nâng tầm tri thức</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="contact.css" />
+    <header class="">
+      <div class="main-container">
+        <a href="./home.html" class="logo"
+          ><img src="/img/favicon.ico" alt="" /><span>BPT</span></a
+        >
+        <nav>
+          <ul class="menu">
+            <li class="option-menu">
+              <a href="./home.html">Trang chủ</a>
+            </li>
+            <li class="option-menu">
+              <a href="./introduce.html">Giới Thiệu</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Thể loại</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Fanpage</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Liên Hệ</a>
+            </li>
+            <li class="option-menu">
+              <a href="../login-register-forget/login.html">Đăng Nhập</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="pad"></div>
+      <div class="contact">
+        <p>Sđt:0392674726</p>
+        <p>
+          Email:
+          <a href="">banhphuoctoan1102@gmail.com</a>
+        </p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

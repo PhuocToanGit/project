@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BPT Nâng tầm tri thức</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="products.css" />
+    <header class="">
+      <div class="main-container">
+        <a href="./home.html" class="logo"
+          ><img src="/img/favicon.ico" alt="" /><span>BPT</span></a
+        >
+        <nav>
+          <ul class="menu">
+            <li class="option-menu">
+              <a href="./home.html">Trang chủ</a>
+            </li>
+            <li class="option-menu">
+              <a href="./introduce.html">Giới Thiệu</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Thể loại</a>
+            </li>
+            <li class="option-menu">
+              <a href="">Fanpage</a>
+            </li>
+            <li class="option-menu">
+              <a href="./contact.html">Liên Hệ</a>
+            </li>
+            <li class="option-menu">
+              <a href="../login-register-forget/login.html">Đăng Nhập</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <div style="padding-bottom: 100px"></div>
+      <div class="div-cover">
+        <div style="padding-bottom: 100px"></div>
+        <div class="Product-Description">
+          <div class="Description-top">
+            <div class="product-img">
+              <img src="../img/Chainsawman.jpg" alt="" />
+            </div>
+            <div class="Description">
+              <h3 class="title-product">Chainsaw Man</h3>
+              <div>
+                <p>Tác giả: Fujimoto Tatsuki</p>
+                <p>Thể loại: Manga - Action - Manga - Shounen - Supernatural</p>
+                <p>Đánh giá: 5/5</p>
+                <p>Lượt xem: 4515463 👁️‍🗨️</p>
+                <p>Số lượng: volume</p>
+                <p>Giá: $9.999,00</p>
+                <div>
+                  <button type="button" class="button-buy">Mua ngay</button>
+                  <button type="button" class="button-cart">
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lore">
+            <h2 class="lore-content">Nội dung</h2>
+            <p>
+              Denji là một cậu trai trẻ sống trong cảnh nghèo đói, phải làm thợ
+              săn quỷ để kiếm tiền trả khoản nợ mà người cha đã mất của cậu vay
+              đám yakuza. Cậu nuôi Pochita, một con quỷ có hình dạng giống chó.
+              Bị tên yakuza phục kích, Denji biến thành một sinh vật nửa người
+              nửa quỷ nhờ lập khế ước với Pochita, với điều kiện cậu phải cho
+              Pochita thấy những ước mơ của mình. Denji gặp Makima, một nhân vật
+              cấp cao đến từ Sở Trị An. Được cô thuyết phục gia nhập hàng ngũ
+              thợ săn quỷ, Denji đồng ý và trở thành bạn đồng hành với Aki và
+              Power, một quỷ nhân. Makima hứa với Denji sẽ thực hiện bất kì mong
+              muốn nào của cậu nếu cậu giết được Quỷ Súng, thủ phạm của vụ thảm
+              sát khủng khiếp nhất trong lịch sử nhân loại.
+            </p>
+          </div>
+        </div>
+        <div class="products-subject">
+          <ul>
+            <li>
+              <a href="" class="img-subject">
+                <img src="../img/dieubimat.JPG" alt="" />
+                <a href="" class="subject-name">The serect</a>
+              </a>
+            </li>
+            <li>
+              <a href="" class="img-subject">
+                <img src="../img/xuxudungkhoc.jpg" alt="" />
+                <a href="" class="subject-name">Xu xu don't cry</a>
+              </a>
+            </li>
+            <li>
+              <a href="" class="img-subject">
+                <img src="../img/unnamed.jpg" alt="" />
+                <a href="" class="subject-name">Because i meet you</a>
+              </a>
+            </li>
+            <li>
+              <a href="" class="img-subject">
+                <img src="../img/1003w-eRK4o7m6a6c.webp" alt="" />
+                <a href="" class="subject-name">Nhớ một thời ta đã quên</a>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
